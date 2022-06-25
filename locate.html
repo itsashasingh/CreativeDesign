@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Location</title>
+	<link rel="stylesheet" href="./css/960_12_col.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+</head>
+<style type="text/css">
+	#search,#btn_sub{
+		padding: 10px;
+		margin-top: 25px;
+		border-radius: 30px;
+		border:1px solid #3483ff;
+	}
+	header{
+		position: fixed;
+		z-index:1;
+		background-color: white;
+		top:0;
+	}
+	.ul_item{
+		display: flex;
+		justify-content: space-around;
+		padding: 10px;
+		margin-top: 3px;
+		list-style-type: none;
+	
+	}
+	.ul_item a{
+		text-decoration: none;
+		color: black;
+		padding: 10px;
+		font-size: 20px;
+	}
+	.ul_item a:hover{
+		text-decoration: none;
+		color: blue;
+		box-shadow: 2px;
+		border:1px solid gray;
+
+	}
+	#home{
+	    top: 203px;
+    	position: absolute;
+	}
+	.h1bold{
+		font-size: 50px; 
+		font-weight: 500px;
+		color: white;
+		padding: 10px;
+	}
+	.para{
+		font-size: 18px;
+		text-align: justify;
+	}
+	.ins-image{
+		padding: 10px;
+		width: 300px;
+		height: 180px;
+	}
+	.cus-padding{
+		padding: 10px;
+		margin-top: 20px;
+	}
+	.my-flex{
+		display: flex;
+		justify-content: space-between;
+	}
+	.my-flexpos{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.ul_item1 {
+		list-style: none;
+		color: black;
+		font-size: 14px;
+		padding: 10px;
+	}
+	.item_pma{
+		padding: 5px;
+		margin:5px;;
+	}
+	.inputbox{
+		border:0px;
+		border-bottom: solid 1px #e1e1e1;
+		transition: border-bottom .3s,border-color .3s,border-width .3s,border .3s ease-in-out;
+    	line-height: 1;
+    	padding: 10px;
+    	margin:15px;
+    	width: 75%;
+	}
+	.inputbox::placeholder{
+		font-size: 18px;
+	}
+	.labelmargin{
+		margin-left: 22px;
+		padding: 5px;
+	}
+	.submit_btn{
+		border-radius: 30px;
+		padding: 12px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 5px;
+		background-color: rgb(255, 255, 255) !important;
+		color: #3483ff;
+		border:1px solid #3483ff;
+		font-size: 16px;
+   		 height: 43px;
+   		 padding-top: 8px;
+	}
+	.submit_btn:hover{
+		color: white;
+		background-color: #3483ff!important;
+		box-shadow: inset 0 0 0 1px #3483ff!important;
+	}
+
+	.btn{
+		padding: 12px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: #116dff;
+		color: white;
+		border: 0px;
+		font-size: 16px;
+	}
+	.btn-google{
+		padding-left: 32px;
+   		 padding-right: 46px;
+	}
+	.img-btn{
+		width:30px;
+		height: 27px;
+		background-color: white;
+	}
+	.btn a{
+		text-decoration: none;
+		color: white;
+	}
+	a{
+		text-decoration: none;
+	}
+</style>
+<body>
+	<div class="container_12">
+		<header id="header">
+			<div class="grid_4">
+				<a href="index.html"><img  src="./img/1117.jpg" alt="logo" width="130" height="90"></a>
+			</div>
+			<div class="grid_4">
+				<h1>Creative</h1>
+			</div>
+			<div class="grid_4">
+				<input type="search" name="search" placeholder="Search here" id="search">
+				<button id="btn_sub" for="search" class="submit_btn">Search</button>
+			</div>
+			<div class="clear"></div>
+			<hr>
+
+			<div class="grid_12">
+				<nav>
+				<ul class="ul_item">
+					<li><a href="index.html">Home </a></li>
+					<li><a href="inspiration.html">Inspiration</a></li>	
+					<li><a href="#">Work Cultute </a></li>
+					<li><a href="#">Pro Blogs </a></li>
+					<li><a href="locate.html">Locate Us</a></li>
+				</ul>
+				</nav>
+			</div>
+
+			<div class="clear"></div>
+			<hr>
+		</header>
+
+
+		<section id="home">
+
+
+			<div class="container_12">
+				<div class="grid_12">
+					<h1 style="font-size: 50px;font-weight: 500;text-align: center;">Sign Up</h1>
+					<h4 style="text-align: center;">Alreay have an account ? <a href="#Login ">Log In</a></h4>
+				</div>
+				<div class="grid_12 my-flexpos">
+					<div class="grid_6">
+						<form class="item_pma">
+							<label for="email" class="labelmargin">Enter your Email</label>
+							<input type="email" name="email" placeholder="Emaid Address" class="inputbox" id="email">
+							<label for="password" class="labelmargin">Enter your password</label>
+							<input type="password" name="password" placeholder="Password" class="inputbox">
+							<button type="submit" class="submit_btn">Sign Up</button>
+						</form>
+					</div>
+
+					<div class="grid_6" id="Login">
+						<div class="labelmargin">
+							<button class="btn item_pma btn-google" ><img src="./img/google-logo.svg "alt="not loaded" class="img-btn"><a href="https://www.google.com"> Continue with Google</a></button>
+							<button class="btn item_pma" style="background-color: #3b5998" ;><img src="./img/facebook-logo.svg "alt="not loaded" class="img-btn" ><a href="https://www.facebook.com" >  Continue with Facebook</a></button>
+
+						</div>
+					</div>
+				</div>
+				<div class="grid_12" style="text-align: center;margin: 35px;">
+					<p>By signing up, you agree to our Terms of Use and to receive Wix emails & updates <br>and acknowledge that you read our<a href="#"> Privacy Policy</a>.</p>
+				</div>
+			</div>
+			<div class="container_12" class="my-flex">
+				<div class="grid_4" class="cus-padding">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7012.332188226725!2d77.0836630754305!3d28.504650129873585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d28.5080098!2d77.0909696!4m5!1s0x390d19412de8bae9%3A0xc9783541db015150!2saihp%20horizon!3m2!1d28.501173599999998!2d77.08668759999999!5e0!3m2!1sen!2sin!4v1656077444122!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="grid_8" >
+				<h2><b>Pune</b></h2>
+				<p>Vasant Kunj Tech park Pune,Maharashtra 4277282</p>
+				<p>Please feel free to reach us at the following details:</p>
+
+				<p>asha@creative.in support_pune@creative.in</p>
+				<p>www.creative.com</p>
+
+				<p>+91 97931 84194</p>
+				</div>
+
+			</div>
+			<div class="grid_12">
+				<hr>
+			</div>
+			<div class="clear"></div>
+
+			
+
+
+			<div class="container_12" class="my-flex">
+				<div class="grid_4" class="cus-padding">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7012.332188226725!2d77.0836630754305!3d28.504650129873585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d28.5080098!2d77.0909696!4m5!1s0x390d19412de8bae9%3A0xc9783541db015150!2saihp%20horizon!3m2!1d28.501173599999998!2d77.08668759999999!5e0!3m2!1sen!2sin!4v1656077444122!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="grid_8" >
+				<h2><b>Mumbai</b></h2>
+				<p>Vasant Kunj Tech park Pune,Maharashtra 4277282</p>
+				<p>Please feel free to reach us at the following details:</p>
+
+				<p>asha@creative.in support_pune@creative.in</p>
+				<p>www.creative.com</p>
+
+				<p>+91 97931 84194</p>
+				</div>
+			
+			</div>
+
+			<div class="grid_12">
+				<hr>
+			</div>
+			<div class="clear"></div>
+
+			<div class="container_12" id="my-flex">
+				<div class="grid_4" class="cus-padding">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d224293.47753703035!2d77.07323894279149!3d28.552173453462736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d28.5080098!2d77.0909696!4m5!1s0x390ce54f9f9059e3%3A0xe745316aa9898ea5!2sLogix%20city%20center%20map%20Sector%2076%20noida!3m2!1d28.5741409!2d77.3538449!5e0!3m2!1sen!2sin!4v1656078001413!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="grid_8" >
+				<h2><b>Greater Noida</b></h2>
+				<p>Budha Vihar Tech park Pune,Greater Noida 4277282</p>
+				<p>Please feel free to reach us at the following details:</p>
+
+				<p>asha@creative.in support_pune@creative.in</p>
+				<p>www.creative.com</p>
+
+				<p>+91 97931 84194</p>
+				</div>
+			</div>
+
+		
+			<div class="clear"></div>
+
+
+
+
+
+
+
+
+			<footer>
+
+		<div class="grid_12">
+			<hr>
+			<p style="text-align: center;">This blog was created with <i>Creative </i>Blog</p>
+			<hr>
+			<div class="clear"></div>
+		</div>
+		<div class="grid_12">
+			<div class="grid_3">
+				<ul class="ul_item1">
+						<li class="item_pma"><b>PRODUCTS</b></li>
+						<li class="item_pma">Templates</li>
+						<li class="item_pma">Explore</li>
+						<li class="item_pma">Features</li>
+						<li class="item_pma">Website Builder</li>
+						<li class="item_pma">Web Accessibility</li>
+						<li class="item_pma">Velo</li>
+						<li class="item_pma">Wix Playground</li>
+						<li class="item_pma">My Sites</li>
+						<li class="item_pma">Premium Plans</li>
+						<li class="item_pma">Wix SEO</li>
+						<li class="item_pma">Logo Maker</li>
+						<li class="item_pma">Create a Blog</li>
+					</ul>
+			</div>
+			<div class="grid_3">
+					<ul class="ul_item1">
+						<li class="item_pma"><b>COMPANY</b></li>
+						<li class="item_pma">About Creative</li>
+						<li class="item_pma">EPress Room</li>
+						<li class="item_pma">Investor Relation</li>
+						<li class="item_pma">Creative jobs</li>
+						<li class="item_pma">Design Asset</li>
+						<li class="item_pma">Terms of Use</li>
+						<li class="item_pma">App Market</li>
+						<li class="item_pma">Privacy Policy</li>
+						<li class="item_pma">Accessibility Statement</li>
+						<li class="item_pma">Upadate And release</li>
+						<li class="item_pma">Contact Us</li>
+						<li class="item_pma">Patent Notice</li>
+					</ul>
+			</div>
+			<div class="grid_3">
+				<ul class="ul_item1">
+						<li class="item_pma"><b>COMMUNITY</b></li>
+						<li class="item_pma">Creative Blog</li>
+						<li class="item_pma">Creative Market</li>
+						<li class="item_pma">Student Website</li>
+						<li class="item_pma">Creative Encyclopedia</li>
+						<li class="item_pma">Partner Community</li>
+						
+				</ul>
+				
+			</div>
+			<div class="grid_3">
+					<ul class="ul_item1">
+						<li class="item_pma"><b>SUPPORT</b></li>
+						<li class="item_pma">Support Center</li>
+						<li class="item_pma">Getting Started Guide</li>
+						<li class="item_pma">Creative Learning</li>
+						<li class="item_pma">Status Page</li>		
+					</ul>
+			</div>
+			<div class="ul_item1">
+				<p style="font-size: 14px;">Creative.com is a leading cloud-based development platform with millions of users worldwide. We make it easy for everyone to create a beautiful, professional web presence.
+					<br>
+				Promote your business, showcase your art, set up an online shop or just test out new ideas. The Creative website builder has everything you need to create a fully personalized, high-quality free website.
+
+				<p>	© 2020-2022 Creative.com, Inc</p>
+			</div>
+		
+		</div>
+		</footer>
+
+
+
+
+
+
+
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+</body>
+</html>
